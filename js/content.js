@@ -41,21 +41,21 @@ const UI = {
     "Source code is private (company code). This page covers the architecture and the outcomes.",
     "Mã nguồn là của công ty nên không công khai. Trang này mô tả kiến trúc và kết quả."
   ),
-  footer: T("Built by hand with HTML, CSS and JavaScript.", "Làm thủ công bằng HTML, CSS và JavaScript."),
+  footer: T("Made with HTML, CSS and JavaScript.", "Làm bằng HTML, CSS và JavaScript."),
 };
 
 const HERO = {
   eyebrow: T("Backend developer, open to part-time internships", "Backend developer, tìm thực tập part-time"),
-  title: T("Backends where the numbers <em>add up.</em>", "Backend mà con số nào cũng <em>khớp.</em>"),
+  title: T("I work on backends for <em>online stores.</em>", "Tôi làm backend cho <em>cửa hàng online.</em>"),
   sub: T(
-    "I build order, inventory and payment backends for online stores, and the data pipelines that check the numbers.",
-    "Tôi xây backend đơn hàng, kho và thanh toán cho cửa hàng online, cùng pipeline dữ liệu để đối chiếu mọi con số."
+    "Mostly orders, inventory, payments and the data pipelines around them, while finishing my Information Systems degree.",
+    "Chủ yếu là đơn hàng, kho, thanh toán và pipeline dữ liệu đi kèm, song song với việc hoàn thành chương trình Hệ thống thông tin."
   ),
 };
 
 /* The results ledger: label ........ value */
 const RESULTS = {
-  title: T("What it adds up to", "Kết quả cộng lại"),
+  title: T("A few numbers", "Một vài con số"),
   groups: [
     {
       title: T("IMYSM Studio", "IMYSM Studio"),
@@ -69,7 +69,7 @@ const RESULTS = {
     {
       title: T("BrownVN and ads", "BrownVN và quảng cáo"),
       rows: [
-        { label: T("Admin modules built solo", "Module admin tự xây"), value: "13" },
+        { label: T("Admin modules", "Module quản trị"), value: "13" },
         { label: T("REST endpoints", "REST endpoint"), value: "~71" },
         { label: T("Meta Ads ROAS (Meta-attributed), 09/2026", "ROAS Meta Ads (theo Meta), 09/2026"), value: "3.4x" },
         { label: T("Meta Ads link CTR, 09/2026", "CTR liên kết Meta Ads, 09/2026"), value: "1.5%" },
@@ -79,45 +79,45 @@ const RESULTS = {
 };
 
 const ABOUT = {
-  pull: T("Money, stock and data should add up.", "Tiền, tồn kho và dữ liệu phải khớp nhau."),
+  pull: T("About me", "Về tôi"),
   paras: [
     T(
-      "I'm a fourth-year Information Systems student at the University of Science, VNU-HCM (GPA 8.24/10). Alongside my studies I have designed and shipped two production e-commerce systems for Vietnamese fashion brands: <b>IMYSM Studio</b>, which replaced Haravan, and <b>BrownVN</b>, which I built and run on my own.",
-      "Tôi là sinh viên năm 4 ngành Hệ thống thông tin, ĐH Khoa học Tự nhiên, ĐHQG TP.HCM (GPA 8,24/10). Song song việc học, tôi đã thiết kế và đưa vào vận hành hai hệ thống thương mại điện tử cho các thương hiệu thời trang Việt: <b>IMYSM Studio</b>, thay thế Haravan, và <b>BrownVN</b>, do tôi tự xây và vận hành."
+      "I'm a fourth-year Information Systems student at the University of Science, VNU-HCM (GPA 8.24/10). Alongside my studies I work on two e-commerce systems used by Vietnamese fashion brands: <b>IMYSM Studio</b>, which replaced Haravan, and <b>BrownVN</b>, which I built and maintain.",
+      "Tôi là sinh viên năm 4 ngành Hệ thống thông tin, ĐH Khoa học Tự nhiên, ĐHQG TP.HCM (GPA 8,24/10). Song song việc học, tôi làm trên hai hệ thống thương mại điện tử đang được các thương hiệu thời trang Việt sử dụng: <b>IMYSM Studio</b>, thay thế Haravan, và <b>BrownVN</b>, do tôi xây dựng và bảo trì."
     ),
     T(
-      "I also run the brand's ads, monthly reports and day-to-day operations, so I know the problems the software has to solve first-hand.",
-      "Tôi cũng phụ trách quảng cáo, báo cáo hằng tháng và vận hành shop, nên hiểu rõ bài toán mà phần mềm cần giải quyết."
+      "I also help with the brand's ads, monthly reports and day-to-day operations, which helps me understand what the software needs to do.",
+      "Tôi cũng hỗ trợ quảng cáo, báo cáo hằng tháng và vận hành shop, nhờ vậy hiểu rõ hơn phần mềm cần làm gì."
     ),
     T(
-      "<b>How I work:</b> I write the specification, design the schema and architecture, and review every change. I use Claude Code as a pair programmer, and every change goes through my review and automated tests before it ships.",
-      "<b>Cách tôi làm việc:</b> tôi viết đặc tả, thiết kế schema và kiến trúc, review mọi thay đổi. Tôi dùng Claude Code như một pair programmer, và mọi thay đổi đều qua review của tôi cùng test tự động trước khi phát hành."
+      "<b>How I work:</b> I start from a written specification and the database schema, use Claude Code as a pair programmer, and review changes and run automated tests before release.",
+      "<b>Cách tôi làm việc:</b> tôi bắt đầu từ đặc tả và schema cơ sở dữ liệu, dùng Claude Code như một pair programmer, review thay đổi và chạy test tự động trước khi phát hành."
     ),
   ],
-  doTitle: T("What I do", "Tôi làm gì"),
+  doTitle: T("What I work on", "Những việc tôi làm"),
   does: [
     {
-      title: T("Order and inventory engines", "Lõi đơn hàng và kho"),
-      body: T("Transactional order creation and FIFO batch costing, so cost of goods is accurate to the batch.", "Tạo đơn trong transaction và giá vốn FIFO theo lô, để giá vốn chính xác đến từng lô."),
+      title: T("Orders and inventory", "Đơn hàng và kho"),
+      body: T("Transactional order creation and FIFO batch costing for cost of goods.", "Tạo đơn trong transaction và tính giá vốn FIFO theo lô."),
     },
     {
-      title: T("Payments that confirm themselves", "Thanh toán tự xác nhận"),
-      body: T("VietQR and SePay transfers verified by HMAC-signed webhooks, then a Zalo message to the customer.", "Chuyển khoản VietQR và SePay được xác thực bằng webhook ký HMAC, sau đó gửi tin Zalo cho khách."),
+      title: T("Payment confirmation", "Xác nhận thanh toán"),
+      body: T("VietQR and SePay transfers confirmed through HMAC-signed webhooks, with a Zalo notification to the customer.", "Chuyển khoản VietQR và SePay được xác nhận qua webhook ký HMAC, kèm thông báo Zalo cho khách."),
     },
     {
-      title: T("Pipelines that check the work", "Pipeline kiểm tra lại số liệu"),
-      body: T("Idempotent migrations and a daily ad-data ETL that reconciles with the cost ledger within 1%.", "Migration idempotent và ETL dữ liệu quảng cáo hằng ngày, khớp sổ chi phí trong vòng 1%."),
+      title: T("Data pipelines", "Pipeline dữ liệu"),
+      body: T("Idempotent data migration and a daily ad-data ETL that is reconciled against the cost ledger.", "Migration dữ liệu idempotent và ETL dữ liệu quảng cáo hằng ngày, được đối chiếu với sổ chi phí."),
     },
     {
-      title: T("The business side", "Phía kinh doanh"),
-      body: T("Paid social, monthly reporting and daily store operations, done before and alongside the code.", "Quảng cáo, báo cáo hằng tháng và vận hành shop hằng ngày, làm trước và song song với việc viết code."),
+      title: T("Operations", "Vận hành"),
+      body: T("Paid social, monthly reporting and daily store tasks alongside development.", "Quảng cáo, báo cáo hằng tháng và công việc shop hằng ngày, song song với phát triển."),
     },
   ],
 };
 
 /* ---------- Work ---------- */
 const WORK = {
-  title: T("Selected work", "Dự án chính"),
+  title: T("Work", "Dự án"),
   imysm: {
     name: "IMYSM Studio",
     url: "https://imysmstudio.com",
@@ -129,21 +129,21 @@ const WORK = {
     ),
     stack: ["React", "Node.js", "Express", "Supabase PostgreSQL", "Row-Level Security", "SePay / VietQR", "Zalo OA", "Meta Graph API", "Playwright", "Vercel", "Railway"],
     problem: T(
-      "The brand sells across its website, Facebook, Instagram, Zalo and TikTok, and needed one system for every direct-channel order in place of Haravan.",
-      "Thương hiệu bán qua website, Facebook, Instagram, Zalo và TikTok, và cần một hệ thống duy nhất cho mọi đơn kênh trực tiếp thay cho Haravan."
+      "The brand sells through its website, Facebook, Instagram, Zalo and TikTok, and wanted one system for direct-channel orders instead of Haravan.",
+      "Thương hiệu bán qua website, Facebook, Instagram, Zalo và TikTok, và muốn có một hệ thống chung cho đơn kênh trực tiếp thay cho Haravan."
     ),
     built: [
-      T("<b>Order and inventory core:</b> transactional order creation, FIFO batch costing for accurate COGS, and role-based access with Supabase Auth and Row-Level Security.", "<b>Lõi đơn hàng và kho:</b> tạo đơn trong transaction, giá vốn FIFO theo lô cho COGS chính xác, phân quyền bằng Supabase Auth và Row-Level Security."),
+      T("<b>Orders and inventory:</b> transactional order creation, FIFO batch costing for COGS, and role-based access with Supabase Auth and Row-Level Security.", "<b>Đơn hàng và kho:</b> tạo đơn trong transaction, giá vốn FIFO theo lô cho COGS, phân quyền bằng Supabase Auth và Row-Level Security."),
       T("<b>Automated payments:</b> VietQR/SePay transfers confirmed through HMAC-signed webhooks, triggering Zalo order and shipping notifications.", "<b>Thanh toán tự động:</b> chuyển khoản VietQR/SePay xác nhận qua webhook ký HMAC, kích hoạt thông báo Zalo về đơn và vận chuyển."),
-      T("<b>Idempotent migration</b> from Haravan: 6,281 historical orders and 11,392 transaction rows, rehearsed first, with an exceptions queue that never guesses an unmapped SKU.", "<b>Migration idempotent</b> từ Haravan: 6.281 đơn lịch sử và 11.392 dòng giao dịch, chạy thử trước, có hàng đợi ngoại lệ, không bao giờ đoán SKU chưa map được."),
+      T("<b>Idempotent migration</b> from Haravan: 6,281 historical orders and 11,392 transaction rows, rehearsed first, with an exceptions queue for unmapped SKUs.", "<b>Migration idempotent</b> từ Haravan: 6.281 đơn lịch sử và 11.392 dòng giao dịch, chạy thử trước, có hàng đợi ngoại lệ cho SKU chưa map được."),
       T("<b>Daily Meta Ads ETL</b> from the Graph API into PostgreSQL, powering ROAS, CTR and CPC dashboards and a rule-based recommender.", "<b>ETL Meta Ads hằng ngày</b> từ Graph API vào PostgreSQL, cấp dữ liệu cho dashboard ROAS, CTR, CPC và bộ đề xuất theo luật."),
       T("<b>Tests:</b> critical flows covered by Playwright end-to-end tests and production smoke tests.", "<b>Kiểm thử:</b> các luồng quan trọng được phủ bằng test end-to-end Playwright và smoke test trên production."),
     ],
     outcome: T(
-      "It now handles every direct-channel order. In its first full month (09/2026) the website drove about <b>60% of direct revenue</b>, and the monthly ad figures match the cost ledger and the Meta API within <b>1%</b>.",
-      "Hệ thống hiện xử lý mọi đơn kênh trực tiếp. Trong tháng đầy đủ đầu tiên (09/2026), website chiếm khoảng <b>60% doanh thu kênh trực tiếp</b>, số liệu quảng cáo hằng tháng khớp sổ chi phí và Meta API trong vòng <b>1%</b>."
+      "The system is used for direct-channel orders. In its first full month (09/2026) the website accounted for about 60% of direct revenue, and monthly ad figures were within 1% of the cost ledger and the Meta API.",
+      "Hệ thống đang được dùng cho đơn kênh trực tiếp. Trong tháng đầy đủ đầu tiên (09/2026), website chiếm khoảng 60% doanh thu kênh trực tiếp, số liệu quảng cáo hằng tháng chênh dưới 1% so với sổ chi phí và Meta API."
     ),
-    labels: { problem: T("Problem", "Vấn đề"), built: T("Built", "Đã xây"), outcome: T("Outcome", "Kết quả") },
+    labels: { problem: T("Context", "Bối cảnh"), built: T("What I worked on", "Phần tôi làm"), outcome: T("Results so far", "Kết quả đến nay") },
   },
   map: {
     title: T("How it fits together", "Các phần khớp nhau thế nào"),
@@ -154,11 +154,11 @@ const WORK = {
         tab: T("Order to payment", "Từ đơn đến thanh toán"),
         steps: [
           { name: T("Order placed", "Đặt đơn"), body: T("A customer orders on the website or through a social channel. All direct channels land in the same system.", "Khách đặt đơn trên website hoặc qua kênh mạng xã hội. Mọi kênh trực tiếp cùng đổ về một hệ thống.") },
-          { name: T("Transactional create", "Tạo đơn trong transaction"), body: T("The order and its stock movement are written in one database transaction, so a half-saved order cannot exist.", "Đơn hàng và biến động tồn kho được ghi trong một transaction, nên không thể có đơn lưu dở.") },
-          { name: T("FIFO costing", "Giá vốn FIFO"), body: T("Stock is consumed from the oldest batch first, so each order carries the true cost of the batch it used.", "Hàng được xuất từ lô cũ nhất trước, nên mỗi đơn mang đúng giá vốn của lô đã dùng.") },
+          { name: T("Transactional create", "Tạo đơn trong transaction"), body: T("The order and its stock movement are written in one database transaction to avoid partially saved orders.", "Đơn hàng và biến động tồn kho được ghi trong một transaction để tránh đơn lưu dở.") },
+          { name: T("FIFO costing", "Giá vốn FIFO"), body: T("Stock is taken from the oldest batch first, and each order records the cost of the batch it used.", "Hàng được xuất từ lô cũ nhất trước, mỗi đơn ghi nhận giá vốn của lô đã dùng.") },
           { name: T("Bank transfer", "Chuyển khoản"), body: T("The customer pays by VietQR. SePay watches the bank account and reports the transfer.", "Khách thanh toán bằng VietQR. SePay theo dõi tài khoản ngân hàng và báo lại giao dịch.") },
-          { name: T("HMAC webhook", "Webhook HMAC"), body: T("The webhook signature is verified with HMAC before anything is trusted, then the order is matched and confirmed.", "Chữ ký webhook được xác thực bằng HMAC trước khi tin bất cứ điều gì, sau đó đơn được đối khớp và xác nhận.") },
-          { name: T("Zalo notification", "Thông báo Zalo"), body: T("The customer gets order and shipping updates on Zalo, with no one confirming payment by hand.", "Khách nhận cập nhật đơn hàng và vận chuyển qua Zalo, không ai phải xác nhận thanh toán thủ công.") },
+          { name: T("HMAC webhook", "Webhook HMAC"), body: T("The webhook signature is verified with HMAC, then the transfer is matched to the order and confirmed.", "Chữ ký webhook được xác thực bằng HMAC, sau đó giao dịch được đối khớp với đơn và xác nhận.") },
+          { name: T("Zalo notification", "Thông báo Zalo"), body: T("The customer receives order and shipping updates on Zalo.", "Khách nhận cập nhật đơn hàng và vận chuyển qua Zalo.") },
         ],
       },
       {
@@ -166,9 +166,9 @@ const WORK = {
         tab: T("Haravan migration", "Migration từ Haravan"),
         steps: [
           { name: T("Haravan export", "Dữ liệu Haravan"), body: T("6,281 historical orders and 11,392 transaction rows exported from the old platform.", "6.281 đơn lịch sử và 11.392 dòng giao dịch được xuất từ nền tảng cũ.") },
-          { name: T("Rehearsal", "Chạy thử"), body: T("The whole migration is rehearsed on a copy first, so surprises show up before production does.", "Toàn bộ migration được chạy thử trên bản sao trước, để bất ngờ xuất hiện trước khi chạy thật.") },
+          { name: T("Rehearsal", "Chạy thử"), body: T("The migration is rehearsed on a copy first to catch issues before the real run.", "Migration được chạy thử trên bản sao trước để phát hiện lỗi trước khi chạy thật.") },
           { name: T("Idempotent load", "Nạp idempotent"), body: T("The load can be re-run safely: running it twice gives the same result as running it once.", "Có thể chạy lại an toàn: chạy hai lần cho kết quả giống chạy một lần.") },
-          { name: T("Exceptions queue", "Hàng đợi ngoại lệ"), body: T("A row with an unmapped SKU goes to a queue for a person to resolve. The pipeline never guesses.", "Dòng có SKU chưa map được đưa vào hàng đợi để người xử lý. Pipeline không bao giờ đoán.") },
+          { name: T("Exceptions queue", "Hàng đợi ngoại lệ"), body: T("Rows with an unmapped SKU go to a queue for manual review.", "Dòng có SKU chưa map được đưa vào hàng đợi để xem xét thủ công.") },
         ],
       },
       {
@@ -177,9 +177,9 @@ const WORK = {
         steps: [
           { name: T("Meta Graph API", "Meta Graph API"), body: T("Ad spend and performance are pulled from the Graph API once a day.", "Chi phí và hiệu quả quảng cáo được lấy từ Graph API mỗi ngày.") },
           { name: T("ETL", "ETL"), body: T("The raw data is cleaned and shaped into tables that match how the business reads its numbers.", "Dữ liệu thô được làm sạch và chuyển thành bảng khớp với cách doanh nghiệp đọc số liệu.") },
-          { name: T("PostgreSQL", "PostgreSQL"), body: T("Everything lands in PostgreSQL next to orders and the cost ledger, so ads and sales can be joined.", "Mọi thứ nằm trong PostgreSQL cạnh đơn hàng và sổ chi phí, nên có thể ghép quảng cáo với doanh số.") },
-          { name: T("Dashboards", "Dashboard"), body: T("ROAS, CTR and CPC dashboards, plus a rule-based recommender that suggests where budget should move.", "Dashboard ROAS, CTR, CPC, cùng bộ đề xuất theo luật gợi ý nơi nên chuyển ngân sách.") },
-          { name: T("Reconciliation", "Đối chiếu"), body: T("Monthly figures are checked against the cost ledger and the Meta API and agree within 1%.", "Số liệu hằng tháng được đối chiếu với sổ chi phí và Meta API và khớp trong vòng 1%.") },
+          { name: T("PostgreSQL", "PostgreSQL"), body: T("The data is stored in PostgreSQL next to orders and the cost ledger, so ads and sales can be compared.", "Dữ liệu được lưu trong PostgreSQL cạnh đơn hàng và sổ chi phí, nên có thể so sánh quảng cáo với doanh số.") },
+          { name: T("Dashboards", "Dashboard"), body: T("ROAS, CTR and CPC dashboards, plus simple rule-based budget suggestions.", "Dashboard ROAS, CTR, CPC, cùng gợi ý ngân sách đơn giản theo luật.") },
+          { name: T("Reconciliation", "Đối chiếu"), body: T("Monthly figures are checked against the cost ledger and the Meta API (difference under 1%).", "Số liệu hằng tháng được đối chiếu với sổ chi phí và Meta API (chênh dưới 1%).") },
         ],
       },
     ],
@@ -189,7 +189,7 @@ const WORK = {
     url: "https://brownvn.com",
     urlLabel: "brownvn.com",
     role: T("Freelance Full-stack Developer, 01/2026 - Present", "Freelance Full-stack Developer, 01/2026 - Hiện tại"),
-    summary: T("A fashion brand's storefront, admin dashboard and database, built and run by me alone.", "Storefront, trang quản trị và cơ sở dữ liệu của một thương hiệu thời trang, do một mình tôi xây và vận hành."),
+    summary: T("Storefront, admin dashboard and database for a fashion brand, which I built and maintain.", "Storefront, trang quản trị và cơ sở dữ liệu cho một thương hiệu thời trang, do tôi xây dựng và bảo trì."),
     figures: [
       { value: "13", label: T("admin modules", "module admin") },
       { value: "~71", label: T("REST endpoints", "REST endpoint") },
@@ -211,14 +211,14 @@ const EXPERIENCE = {
       dateVi: "08/2026 - Hiện tại",
       role: T("Full-stack Developer, IMYSM", "Full-stack Developer, IMYSM"),
       meta: T("Part-time, Ho Chi Minh City", "Part-time, TP. Hồ Chí Minh"),
-      body: [T("Designed, built and run IMYSM Studio. The full story is in Selected work above.", "Thiết kế, xây dựng và vận hành IMYSM Studio. Câu chuyện đầy đủ nằm ở phần Dự án chính phía trên.")],
+      body: [T("Work on IMYSM Studio. Details are in the Work section above.", "Làm trên IMYSM Studio. Chi tiết ở phần Dự án phía trên.")],
     },
     {
       date: "01/2026 - Present",
       dateVi: "01/2026 - Hiện tại",
       role: T("Freelance Full-stack Developer, BrownVN", "Freelance Full-stack Developer, BrownVN"),
       meta: T("Freelance", "Freelance"),
-      body: [T("Built and run the storefront, admin dashboard and database solo. Details are in Selected work above.", "Tự xây và vận hành storefront, trang quản trị và cơ sở dữ liệu. Chi tiết nằm ở phần Dự án chính phía trên.")],
+      body: [T("Built and maintain the storefront, admin dashboard and database. Details are in the Work section above.", "Xây dựng và bảo trì storefront, trang quản trị và cơ sở dữ liệu. Chi tiết ở phần Dự án phía trên.")],
     },
     {
       date: "07/2024 - Present",
@@ -226,7 +226,7 @@ const EXPERIENCE = {
       role: T("Marketing and Operations Analyst, IMYSM", "Marketing và Operations Analyst, IMYSM"),
       meta: T("Part-time, fashion brand selling through its website, social channels and marketplaces", "Part-time, thương hiệu thời trang bán qua website, mạng xã hội và sàn TMĐT"),
       body: [
-        T("Run Meta ads (about 6.3M VND spend in 09/2026): <b>3.4x Meta-attributed ROAS</b> (7.0x on total direct-channel revenue) and <b>1.5% link CTR</b>.", "Chạy quảng cáo Meta (chi khoảng 6,3 triệu đ trong 09/2026): <b>ROAS 3,4x theo Meta</b> (7,0x trên toàn bộ doanh thu kênh trực tiếp) và <b>CTR liên kết 1,5%</b>."),
+        T("Run Meta ads (about 6.3M VND spend in 09/2026): 3.4x Meta-attributed ROAS (7.0x on total direct-channel revenue) and 1.5% link CTR.", "Chạy quảng cáo Meta (chi khoảng 6,3 triệu đ trong 09/2026): ROAS 3,4x theo Meta (7,0x trên toàn bộ doanh thu kênh trực tiếp) và CTR liên kết 1,5%."),
         T("Prepare monthly business reports (revenue, costs and profit by channel and SKU) from stock counts and sales data.", "Làm báo cáo kinh doanh hằng tháng (doanh thu, chi phí, lợi nhuận theo kênh và SKU) từ kiểm kho và dữ liệu bán hàng."),
         T("Handle store operations: order packing, stock checks, goods receiving and expense tracking.", "Vận hành shop: soạn đơn, kiểm kho, nhập hàng và theo dõi chi tiêu."),
       ],
@@ -275,8 +275,8 @@ const UNIVERSITY = {
     date: "01/2026 - 05/2026",
     sub: T("Data Security in IS course, team of 5", "Môn An toàn và bảo mật dữ liệu trong HTTT, nhóm 5 người"),
     body: T(
-      "Built the core of Subsystem 1: a C# WinForms Oracle admin app to create and drop users and roles, grant and revoke privileges (WITH GRANT OPTION, column-level SELECT and UPDATE) and inspect privileges per user or role. The wider project secured a hospital database with RBAC, VPD, Oracle Label Security, auditing and RMAN recovery.",
-      "Xây nền tảng Phân hệ 1: ứng dụng C# WinForms quản trị Oracle, tạo và xóa user, role, cấp và thu hồi quyền (WITH GRANT OPTION, SELECT và UPDATE cấp cột) và xem quyền theo user hoặc role. Toàn đồ án bảo mật CSDL bệnh viện bằng RBAC, VPD, Oracle Label Security, kiểm toán và khôi phục RMAN."
+      "Worked on Subsystem 1: a C# WinForms Oracle admin app to create and drop users and roles, grant and revoke privileges (WITH GRANT OPTION, column-level SELECT and UPDATE) and inspect privileges per user or role. The wider project secured a hospital database with RBAC, VPD, Oracle Label Security, auditing and RMAN recovery.",
+      "Làm Phân hệ 1: ứng dụng C# WinForms quản trị Oracle, tạo và xóa user, role, cấp và thu hồi quyền (WITH GRANT OPTION, SELECT và UPDATE cấp cột) và xem quyền theo user hoặc role. Toàn đồ án bảo mật CSDL bệnh viện bằng RBAC, VPD, Oracle Label Security, kiểm toán và khôi phục RMAN."
     ),
     stack: ["Oracle", "C#", "WinForms", "RBAC", "VPD", "OLS"],
     url: "https://github.com/DomTriet/oracle-admin-hospital-security",
@@ -286,9 +286,9 @@ const UNIVERSITY = {
 /* ---------- Skills, foundation at the bottom ---------- */
 const SKILLS = {
   title: T("Skills", "Kỹ năng"),
-  intro: T("Stacked from foundation to growing edge, the way I think about a system.", "Xếp từ nền tảng đến phần đang phát triển, đúng cách tôi nghĩ về một hệ thống."),
+  intro: T("Grouped from fundamentals at the bottom to what I am still learning at the top.", "Xếp từ kiến thức nền ở dưới đến những thứ tôi đang học ở trên."),
   layers: [
-    { name: T("Growing edge", "Đang phát triển"), edge: true, items: ["ETL pipelines", "pandas", "PyTorch", "Meta Graph API", "Google Sheets API", "Knowledge-graph recommenders (KGAT)"] },
+    { name: T("Currently learning", "Đang học"), edge: true, items: ["ETL pipelines", "pandas", "PyTorch", "Meta Graph API", "Google Sheets API", "Knowledge-graph recommenders (KGAT)"] },
     { name: T("Delivery and quality", "Triển khai và chất lượng"), items: ["Git / GitHub", "GitHub Actions CI", "Jest", "Playwright (E2E)", "ESLint", "Vercel", "Railway"] },
     { name: T("Frontend and integrations", "Frontend và tích hợp"), items: ["React", "Angular", "Vite", "Tailwind CSS", "SePay / VietQR", "Zalo OA", "GHN", "PayPal", "Cloudinary", "Meta Pixel / CAPI"] },
     { name: T("Services", "Dịch vụ"), items: ["Node.js", "Express", "REST API design", "Zod validation", "Webhooks (HMAC)", "Authentication and RBAC"] },
@@ -296,7 +296,7 @@ const SKILLS = {
     { name: T("Foundations", "Nền tảng"), items: ["JavaScript", "TypeScript", "SQL", "Python", "C#"] },
   ],
   business: {
-    name: T("Beside the stack: the business side", "Bên cạnh stack: phía kinh doanh"),
+    name: T("Other", "Khác"),
     items: ["Meta Ads", "P&L, COGS and ROAS reporting", "Excel", "Google Sheets", "Inventory management"],
   },
 };
@@ -342,8 +342,8 @@ const EDU = {
 const CONTACT = {
   title: T("Looking for a backend internship in Ho Chi Minh City.", "Đang tìm thực tập Backend tại TP. Hồ Chí Minh."),
   body: T(
-    "Part-time, available throughout the week, growing toward Data Engineering. If you have a problem with orders, stock, payments or messy data, I'd like to hear it.",
-    "Part-time, làm được cả tuần, định hướng Data Engineering. Nếu bạn có bài toán về đơn hàng, kho, thanh toán hoặc dữ liệu lộn xộn, tôi rất muốn nghe."
+    "Part-time, available throughout the week, with an interest in Data Engineering. I would be glad to hear about suitable openings.",
+    "Part-time, làm được cả tuần, quan tâm đến Data Engineering. Tôi rất mong nhận được thông tin về các vị trí phù hợp."
   ),
   cvEn: T("CV in English (PDF)", "CV tiếng Anh (PDF)"),
   cvVi: T("CV in Vietnamese (PDF)", "CV tiếng Việt (PDF)"),
