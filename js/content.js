@@ -64,15 +64,15 @@ const RESULTS = {
         { label: T("Haravan orders migrated", "Đơn Haravan đã migrate"), value: "6,281" },
         { label: T("Transaction rows migrated", "Dòng giao dịch đã migrate"), value: "11,392" },
         { label: T("Meta Ads ETL vs cost ledger", "ETL Meta Ads so với sổ chi phí"), value: "<1%" },
+        { label: T("Meta Ads ROAS (Meta-attributed), 09/2026", "ROAS Meta Ads (theo Meta), 09/2026"), value: "3.4x" },
+        { label: T("Meta Ads link CTR, 09/2026", "CTR liên kết Meta Ads, 09/2026"), value: "1.5%" },
       ],
     },
     {
-      title: T("BrownVN and ads", "BrownVN và quảng cáo"),
+      title: T("BrownVN", "BrownVN"),
       rows: [
         { label: T("Admin modules", "Module quản trị"), value: "13" },
         { label: T("REST endpoints", "REST endpoint"), value: "~71" },
-        { label: T("Meta Ads ROAS (Meta-attributed), 09/2026", "ROAS Meta Ads (theo Meta), 09/2026"), value: "3.4x" },
-        { label: T("Meta Ads link CTR, 09/2026", "CTR liên kết Meta Ads, 09/2026"), value: "1.5%" },
       ],
     },
   ],
