@@ -267,7 +267,7 @@ const UNIVERSITY = {
       "Backend developer for the IS Analysis and Design course. Took part in requirements and design, built room and bed search, rental requests with ID upload and viewing bookings, and fixed CI to pass a 70% Jest coverage gate.",
       "Backend developer cho môn Phân tích và Thiết kế HTTT. Tham gia phân tích yêu cầu và thiết kế, xây tìm phòng và giường, yêu cầu thuê phòng kèm tải CCCD và đặt lịch xem phòng, sửa CI để đạt ngưỡng coverage Jest 70%."
     ),
-    stack: ["Angular", "TypeScript", "Node.js", "Spring Boot", "Supabase", "Jest"],
+    stack: ["Angular", "TypeScript", "Node.js", "Express", "Supabase", "Jest"],
     url: "https://github.com/DomTriet/homestay-dorm-management",
   },
   hospital: {
