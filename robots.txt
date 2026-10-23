@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://domtriet.github.io/sitemap.xml

@@ -45,7 +45,7 @@ const UI = {
 };
 
 const HERO = {
-  eyebrow: T("Backend developer, open to part-time internships", "Backend developer, tìm thực tập part-time"),
+  eyebrow: T("Backend developer, open to internships and graduate roles", "Backend developer, tìm vị trí thực tập và fresher"),
   title: T("I work on backends for <em>online stores.</em>", "Tôi làm backend cho <em>cửa hàng online.</em>"),
   sub: T(
     "Mostly orders, inventory, payments and the data pipelines around them, while finishing my Information Systems degree.",
@@ -274,8 +274,9 @@ const EDU = {
     meta: T("B.S. Information Technology, Information Systems major", "Cử nhân Công nghệ thông tin, chuyên ngành Hệ thống thông tin"),
     rows: [
       { label: T("Years", "Năm học"), value: T("2023 - 2027 (expected)", "2023 - 2027 (dự kiến)") },
+      { label: T("Status", "Tiến độ"), value: T("Coursework done, thesis", "Xong môn, làm khóa luận") },
       { label: T("GPA", "GPA"), value: T("8.24 / 10", "8,24 / 10") },
-      { label: T("English", "Tiếng Anh"), value: T("IELTS 7.0 (2023)", "IELTS 7.0 (2023)") },
+      { label: T("English", "Tiếng Anh"), value: T("IELTS 7.0 · C1 (01/2023)", "IELTS 7.0 · C1 (01/2023)") },
       { label: T("Vietnamese", "Tiếng Việt"), value: T("Native", "Bản ngữ") },
     ],
   },
@@ -305,10 +306,10 @@ const EDU = {
 };
 
 const CONTACT = {
-  title: T("Looking for a backend internship in Ho Chi Minh City.", "Đang tìm thực tập Backend tại TP. Hồ Chí Minh."),
+  title: T("Looking for a backend role in Ho Chi Minh City.", "Đang tìm vị trí Backend tại TP. Hồ Chí Minh."),
   body: T(
-    "Part-time, available throughout the week, with an interest in Data Engineering. I would be glad to hear about suitable openings.",
-    "Part-time, làm được cả tuần, quan tâm đến Data Engineering. Tôi rất mong nhận được thông tin về các vị trí phù hợp."
+    "Open to backend internships and graduate roles, growing toward Data Engineering. I would be glad to hear about suitable openings.",
+    "Sẵn sàng cho vị trí thực tập hoặc fresher Backend, định hướng Data Engineering. Tôi rất mong nhận được thông tin về các vị trí phù hợp."
   ),
   cvEn: T("CV in English (PDF)", "CV tiếng Anh (PDF)"),
   cvVi: T("CV in Vietnamese (PDF)", "CV tiếng Việt (PDF)"),

@@ -338,3 +338,6 @@ footer { border-top: 1px solid var(--line); padding-block: 22px; color: var(--mu
 }
 
 @media print { .js .rv { opacity: 1; transform: none; } }
+
+/* very small phones: let ledger values wrap */
+@media (max-width: 380px) { .ledger .val { white-space: normal; font-size: 0.95rem; } .ledger .dots { min-width: 8px; } .edu { grid-template-columns: minmax(0, 1fr); } }
