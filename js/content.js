@@ -64,8 +64,6 @@ const RESULTS = {
         { label: T("Haravan orders migrated", "Đơn Haravan đã migrate"), value: "6,281" },
         { label: T("Transaction rows migrated", "Dòng giao dịch đã migrate"), value: "11,392" },
         { label: T("Meta Ads ETL vs cost ledger", "ETL Meta Ads so với sổ chi phí"), value: "<1%" },
-        { label: T("Meta Ads ROAS (Meta-attributed), 09/2026", "ROAS Meta Ads (theo Meta), 09/2026"), value: "3.4x" },
-        { label: T("Meta Ads link CTR, 09/2026", "CTR liên kết Meta Ads, 09/2026"), value: "1.5%" },
       ],
     },
     {
@@ -86,10 +84,6 @@ const ABOUT = {
       "Tôi là sinh viên năm 4 ngành Hệ thống thông tin, ĐH Khoa học Tự nhiên, ĐHQG TP.HCM (GPA 8,24/10). Song song việc học, tôi làm trên hai hệ thống thương mại điện tử đang được các thương hiệu thời trang Việt sử dụng: <b>IMYSM Studio</b>, thay thế Haravan, và <b>BrownVN</b>, do tôi xây dựng và bảo trì."
     ),
     T(
-      "I also help with the brand's ads, monthly reports and day-to-day operations, which helps me understand what the software needs to do.",
-      "Tôi cũng hỗ trợ quảng cáo, báo cáo hằng tháng và vận hành shop, nhờ vậy hiểu rõ hơn phần mềm cần làm gì."
-    ),
-    T(
       "<b>How I work:</b> I start from a written specification and the database schema, use Claude Code as a pair programmer, and review changes and run automated tests before release.",
       "<b>Cách tôi làm việc:</b> tôi bắt đầu từ đặc tả và schema cơ sở dữ liệu, dùng Claude Code như một pair programmer, review thay đổi và chạy test tự động trước khi phát hành."
     ),
@@ -107,10 +101,6 @@ const ABOUT = {
     {
       title: T("Data pipelines", "Pipeline dữ liệu"),
       body: T("Idempotent data migration and a daily ad-data ETL that is reconciled against the cost ledger.", "Migration dữ liệu idempotent và ETL dữ liệu quảng cáo hằng ngày, được đối chiếu với sổ chi phí."),
-    },
-    {
-      title: T("Operations", "Vận hành"),
-      body: T("Paid social, monthly reporting and daily store tasks alongside development.", "Quảng cáo, báo cáo hằng tháng và công việc shop hằng ngày, song song với phát triển."),
     },
   ],
 };
@@ -220,33 +210,12 @@ const EXPERIENCE = {
       meta: T("Freelance", "Freelance"),
       body: [T("Built and maintain the storefront, admin dashboard and database. Details are in the Work section above.", "Xây dựng và bảo trì storefront, trang quản trị và cơ sở dữ liệu. Chi tiết ở phần Dự án phía trên.")],
     },
-    {
-      date: "07/2024 - Present",
-      dateVi: "07/2024 - Hiện tại",
-      role: T("Marketing and Operations Analyst, IMYSM", "Marketing và Operations Analyst, IMYSM"),
-      meta: T("Part-time, fashion brand selling through its website, social channels and marketplaces", "Part-time, thương hiệu thời trang bán qua website, mạng xã hội và sàn TMĐT"),
-      body: [
-        T("Run Meta ads (about 6.3M VND spend in 09/2026): 3.4x Meta-attributed ROAS (7.0x on total direct-channel revenue) and 1.5% link CTR.", "Chạy quảng cáo Meta (chi khoảng 6,3 triệu đ trong 09/2026): ROAS 3,4x theo Meta (7,0x trên toàn bộ doanh thu kênh trực tiếp) và CTR liên kết 1,5%."),
-        T("Prepare monthly business reports (revenue, costs and profit by channel and SKU) from stock counts and sales data.", "Làm báo cáo kinh doanh hằng tháng (doanh thu, chi phí, lợi nhuận theo kênh và SKU) từ kiểm kho và dữ liệu bán hàng."),
-        T("Handle store operations: order packing, stock checks, goods receiving and expense tracking.", "Vận hành shop: soạn đơn, kiểm kho, nhập hàng và theo dõi chi tiêu."),
-      ],
-    },
   ],
 };
 
-/* ---------- University projects (thesis + 3 cells) ---------- */
+/* ---------- University projects (3 cells) ---------- */
 const UNIVERSITY = {
   title: T("Projects from university", "Dự án ở trường"),
-  thesis: {
-    name: T("Graduation thesis", "Khóa luận tốt nghiệp"),
-    date: T("06/2026 - In progress", "06/2026 - Đang thực hiện"),
-    sub: T("A time-aware knowledge-graph recommender", "Hệ gợi ý knowledge graph có yếu tố thời gian"),
-    body: T(
-      "Extending KGAT, a knowledge-graph attention network, with temporal signals. I built pandas and PyTorch pipelines for preprocessing, knowledge-graph construction, leakage-free time-based splits and Recall, NDCG and Hit Ratio evaluation on Foursquare NYC and Amazon Music, benchmarked against Matrix Factorization.",
-      "Mở rộng KGAT, mạng attention trên knowledge graph, với tín hiệu thời gian. Tôi xây pipeline pandas và PyTorch cho tiền xử lý, dựng knowledge graph, chia tập theo thời gian không rò rỉ dữ liệu, đánh giá Recall, NDCG, Hit Ratio trên Foursquare NYC và Amazon Music, so sánh với Matrix Factorization."
-    ),
-    stack: ["Python", "pandas", "PyTorch", "KGAT"],
-  },
   voucher: {
     name: T("Voucher marketplace", "Sàn voucher giảm giá"),
     date: "06/2026 - 08/2026",
@@ -286,19 +255,15 @@ const UNIVERSITY = {
 /* ---------- Skills, foundation at the bottom ---------- */
 const SKILLS = {
   title: T("Skills", "Kỹ năng"),
-  intro: T("Grouped from fundamentals at the bottom to what I am still learning at the top.", "Xếp từ kiến thức nền ở dưới đến những thứ tôi đang học ở trên."),
+  intro: T("Grouped from fundamentals at the bottom to data work at the top.", "Xếp từ kiến thức nền ở dưới đến phần dữ liệu ở trên."),
   layers: [
-    { name: T("Currently learning", "Đang học"), edge: true, items: ["ETL pipelines", "pandas", "PyTorch", "Meta Graph API", "Google Sheets API", "Knowledge-graph recommenders (KGAT)"] },
-    { name: T("Delivery and quality", "Triển khai và chất lượng"), items: ["Git / GitHub", "GitHub Actions CI", "Jest", "Playwright (E2E)", "ESLint", "Vercel", "Railway"] },
-    { name: T("Frontend and integrations", "Frontend và tích hợp"), items: ["React", "Angular", "Vite", "Tailwind CSS", "SePay / VietQR", "Zalo OA", "GHN", "PayPal", "Cloudinary", "Meta Pixel / CAPI"] },
-    { name: T("Services", "Dịch vụ"), items: ["Node.js", "Express", "REST API design", "Zod validation", "Webhooks (HMAC)", "Authentication and RBAC"] },
-    { name: T("Data layer", "Tầng dữ liệu"), items: ["PostgreSQL", "SQL Server", "Supabase (Auth, RLS)", "Oracle (RBAC, VPD, OLS, FGA)", "Schema design", "Migrations", "Transactions"] },
-    { name: T("Foundations", "Nền tảng"), items: ["JavaScript", "TypeScript", "SQL", "Python", "C#"] },
+    { name: T("Data pipelines", "Pipeline dữ liệu"), edge: true, items: ["ETL pipelines", "Python", "Meta Graph API", "Reconciliation and reporting"] },
+    { name: T("Delivery and quality", "Triển khai và chất lượng"), items: ["Git / GitHub", "GitHub Actions CI", "Jest", "Playwright (E2E)"] },
+    { name: T("Frontend and integrations", "Frontend và tích hợp"), items: ["React", "Angular", "PayPal", "Stripe (sandbox)", "SePay / VietQR"] },
+    { name: T("Services", "Dịch vụ"), items: ["Node.js", "Express", "REST APIs", "Webhooks (HMAC)", "Authentication and RBAC"] },
+    { name: T("Data layer", "Tầng dữ liệu"), items: ["PostgreSQL (Supabase, RLS)", "SQL Server", "Oracle", "Data modelling", "Transactions", "Migrations"] },
+    { name: T("Foundations", "Nền tảng"), items: ["JavaScript / TypeScript", "C#", "SQL", "Python"] },
   ],
-  business: {
-    name: T("Other", "Khác"),
-    items: ["Meta Ads", "P&L, COGS and ROAS reporting", "Excel", "Google Sheets", "Inventory management"],
-  },
 };
 
 /* ---------- Education and certificates ---------- */

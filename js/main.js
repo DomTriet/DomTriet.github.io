@@ -179,7 +179,7 @@
     $("#university .wrap").innerHTML =
       '<h2 class="rv">' + t(u.title) + "</h2>" +
       '<div class="bento">' +
-        '<article class="cell thesis rv"><span class="date">' + t(u.thesis.date) + "</span><h3>" + t(u.thesis.name) + '</h3><p class="cs">' + t(u.thesis.sub) + "</p><p>" + t(u.thesis.body) + "</p>" + chips(u.thesis.stack) + "</article>" +
+        (u.thesis ? '<article class="cell thesis rv"><span class="date">' + t(u.thesis.date) + "</span><h3>" + t(u.thesis.name) + '</h3><p class="cs">' + t(u.thesis.sub) + "</p><p>" + t(u.thesis.body) + "</p>" + chips(u.thesis.stack) + "</article>" : "") +
         '<article class="cell voucher rv" style="--d:.06s"><span class="date">' + u.voucher.date + "</span><h3>" + t(u.voucher.name) + '</h3><p class="cs">' + t(u.voucher.sub) + "</p><p>" + t(u.voucher.body) + "</p>" + chips(u.voucher.stack) + '<div class="cell-links"><a class="link-arrow"' + ext + ' href="' + u.voucher.demo + '">' + t(UI.demo) + ' <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>' + gh(u.voucher.url) + "</div></article>" +
         '<article class="cell homestay rv" style="--d:.08s"><span class="date">' + u.homestay.date + "</span><h3>" + u.homestay.name + '</h3><p class="cs">' + t(u.homestay.sub) + "</p><p>" + t(u.homestay.body) + "</p>" + chips(u.homestay.stack) + gh(u.homestay.url) + "</article>" +
         '<article class="cell hospital rv" style="--d:.16s"><span class="date">' + u.hospital.date + "</span><h3>" + t(u.hospital.name) + '</h3><p class="cs">' + t(u.hospital.sub) + "</p><p>" + t(u.hospital.body) + "</p>" + chips(u.hospital.stack) + gh(u.hospital.url) + "</article>" +
@@ -194,7 +194,7 @@
       '<div class="strata">' + s.layers.map(function (l, i) {
         return '<div class="layer rv' + (l.edge ? " edge" : "") + '" style="--step:' + (n - 1 - i) + ';--d:' + i * 0.05 + 's"><h3>' + t(l.name) + "</h3>" + chips(l.items) + "</div>";
       }).join("") + "</div>" +
-      '<div class="business rv"><h3>' + t(s.business.name) + "</h3>" + chips(s.business.items) + "</div>";
+      (s.business ? '<div class="business rv"><h3>' + t(s.business.name) + "</h3>" + chips(s.business.items) + "</div>" : "");
   }
 
   function renderEducation() {
